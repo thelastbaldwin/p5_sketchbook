@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "new": "node scripts/new.js",
     "server": "browser-sync start -f '**/*.html, **/*.js' --serveStatic '.' --server ",
-    "start": "npm run server -- "
+    "start": "node scripts/server.js"
   },
   "author": "Steve Minor",
   "license": "ISC"
