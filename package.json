@@ -1,0 +1,24 @@
+{
+  "name": "p5-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.16.1",
+    "ncp": "^2.0.0",
+    "p5": "^0.5.3"
+  },
+  "devDependencies": {},
+  "config": {
+    "sketchPath": "sketches",
+    "template" : "empty-example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new": "node scripts/new.js",
+    "server": "browser-sync start -f '**/*.html, **/*.js' --serveStatic '.' --server ",
+    "start": "npm run server -- "
+  },
+  "author": "Steve Minor",
+  "license": "ISC"
+}
