@@ -5,13 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.16.1",
+    "dat-gui": "^0.5.0",
     "ncp": "^2.0.0",
     "p5": "^0.5.3"
   },
   "devDependencies": {},
   "config": {
     "sketchPath": "sketches",
-    "template" : "empty-example"
+    "template": "empty-example"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

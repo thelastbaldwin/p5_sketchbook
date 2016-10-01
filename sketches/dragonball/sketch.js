@@ -41,10 +41,12 @@ function drawDragonBall(x, y, size, stars){
 
   push();
   translate(x, y);
+  stroke(255, 0, 0);
+  strokeWeight(size * 0.05);
   fill(255, 180, 0);
-  noStroke();
   ellipse(0, 0, size);
   fill(225, 0, 0);
+  noStroke();
   switch(stars){
     case 1:
       drawInCenter();
@@ -55,13 +57,27 @@ function drawDragonBall(x, y, size, stars){
     case 3:
       drawInCircle(0 - PI/2, TWO_PI - PI/2, 3);
       break;
+    case 4:
+      drawInCircle(0 - PI/2, TWO_PI - PI/2, 4);
+      break;
+    case 5: 
+      drawInCircle(0 - PI/2, TWO_PI - PI/2, 5);
+      break;
+    case 6:
+      drawInCircle(0 - PI/2, TWO_PI - PI/2, 5);
+      drawInCenter();
+      break;
+    case 7:
+      drawInCircle(0 - PI/2, TWO_PI - PI/2, 6);
+      drawInCenter();
+      break;
   }
 
   pop();
 }
 
 function setup() {
-	createCanvas(1024, 1024);
+	createCanvas(640, 640);
 }
 
 function draw() {
